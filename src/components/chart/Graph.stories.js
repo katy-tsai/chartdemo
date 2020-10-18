@@ -19,12 +19,22 @@ BarChart.args = {
   isLegend: true,
   bars: ['uv', 'pv']
 }
+export const StackedBarChart = Template.bind({});
+StackedBarChart.args = {
+  data,
+  axisX: 'name',
+  isTooltip: true,
+  isLegend: true,
+  isStacked: true,
+  bars: ['uv', 'pv']
+}
 export const VerticalBarChart = Template.bind({});
 VerticalBarChart.args = {
   data,
   axisY: 'name',
   isTooltip: true,
   isLegend: true,
+  isStacked: false,
   bars: ['uv', 'pv']
 }
 export const LineChart = Template.bind({});
