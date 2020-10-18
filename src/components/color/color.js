@@ -1,12 +1,12 @@
 import React from 'react';
 
-export const lineColors = ["#3f51b5", "#f44336", "#00bcd4", "#8bc34a", "#ff9800", "#ffeb3b", "#795548"]
+export const lineColors = ['#00c853', '#5e35b1','#e91e63','#fbc02d','#2962ff','#e65100','#00897b'];
 
-export const barColors = ["#7986cb", "#e57373", "#4dd0e1", "#aed581", "#ffb74d", "#fff176", "#a1887f"]
+export const barColors = ['#b39ddb','#80cbc4','#ffee58','#4fc3f7','#ffa726','#b2dfdb','#f48fb1'];
 
-
-export const areaColors= ()=>{
-    return barColors.map((color,index)=>{
+export const areaColors = barColors.slice().reverse();
+export const gradientColors= ()=>{
+    return areaColors.map((color,index)=>{
         return (
             <defs key={`Gradient_${index}`} >
                 <linearGradient  id={`Gradient_${index}`} x1="0" y1="0" x2="0" y2="1">

@@ -51,3 +51,23 @@ AreaChart.args = {
   isLegend: true,
   areas: ['uv', 'pv']
 }
+export const VerticalAreaChart = Template.bind({});
+VerticalAreaChart.args = {
+  data,
+  axisY: 'name',
+  isTooltip: true,
+  isLegend: true,
+  areas: ['uv', 'pv']
+}
+
+export const ComposedChart = Template.bind({});
+
+ComposedChart.args = {
+  data,
+  axisX: 'name',
+  isTooltip: true,
+  isLegend: true,
+  areas: ['uv'],
+  lines: ['pv'],
+  bars: ['amt']
+}
