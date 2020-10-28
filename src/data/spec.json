@@ -1,0 +1,1 @@
+{"$schema":"https://vega.github.io/schema/vega-lite/v4.json","title":"server flow line chart","mark":{"type":"line","tooltip":true,"point":{"filled":true}},"encoding":{"x":{"field":"date","type":"temporal","timeUnit":"yearmonth","axis":{"format":"%Y"}},"y":{"field":"flow","type":"quantitative"},"color":{"field":"server","type":"nominal"}}}
