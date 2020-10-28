@@ -2,6 +2,7 @@ import React from 'react';
 import data from '../../data/data';
 import data1 from '../../data/data1';
 import data2 from '../../data/data2';
+import data3 from '../../data/data3';
 import {chartSpec,pieChartspec,chartRepterSpec} from '../../chartSpec/chartSpec';
 import VegaChart from './VegaChart';
 
@@ -53,4 +54,17 @@ LineChart2.args={
         "filled": true,
     }}}),
     data:data2
+}
+const toTime = (t) => new Date(`${t}/1`).getTime();
+
+
+
+//const sortData= data3.sort((a,b) => toTime(a.month) - toTime(b.month))
+
+export const LineChart3 = Template.bind({});
+LineChart3.args={
+    data:data3,
+    spec:chartSpec({type:'line',fieldX:'month',fieldY:'count',x: { "timeUnit": "month","axis":{"formate":"%b"} },mark:{ "point": {
+        "filled": true,
+    }}})
 }
