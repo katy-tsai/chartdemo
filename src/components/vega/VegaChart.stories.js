@@ -64,7 +64,7 @@ const toTime = (t) => new Date(`${t}/1`).getTime();
 export const LineChart3 = Template.bind({});
 LineChart3.args={
     data:data3,
-    spec:chartSpec({type:'line',fieldX:'month',fieldY:'count',x: { "timeUnit": "month","axis":{"formate":"%b"} },mark:{ "point": {
+    spec:chartSpec({type:'line',fieldX:'month',fieldY:'count',x: { "timeUnit": "month","axis":{"formate":"%b"},scale:{domain:[{year:2020,month:1},{year:2020,month:10}]} },mark:{ "point": {
         "filled": true,
     }}})
 }
